@@ -1,3 +1,4 @@
+// 1조 S-DES c source
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -20,7 +21,7 @@ DATA_TYPE strbin2keytype(char *strbin) { // 문자열로 표시한 이진수를 
 
     for(i=0; i<str_size; i++) {
         if(strbin[i] == '1') {
-            dec = dec | (1 << (str_size-1)-i);
+            dec = dec | (1 << (str_size-1-i));
         }
     }
 
